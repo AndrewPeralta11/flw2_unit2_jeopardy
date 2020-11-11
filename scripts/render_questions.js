@@ -37,12 +37,16 @@ console.log("numCategories;" + numCategories);
 function renderQuestions() {
   // Add code here
   for (let i = 0; i < numCategories; i++) {
+    let quesColumn = `<div class='question-column>`;
     for (let z = 0; z < questionValues.length; z++) {
-      let questionValue = `<div class='question'><div class='question-cell'>${questionValues[z]}</div></div>`;
-      $("#questions").append(questionValue);
-      $(".question-cell").attr("data-category", 1);
+      quesColumn =
+        quesColumn +
+        "<div class='question-cell' data-category='" +
+        z +
+        "'>" +
+        questionValues[z] +
+        "</div></div>";
+      $("#questions").append(quesColumn);
     }
   }
 }
-
-renderQuestions();

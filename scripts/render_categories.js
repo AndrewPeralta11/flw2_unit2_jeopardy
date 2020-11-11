@@ -42,5 +42,3 @@ function renderCategories() {
     $("#categories").append(catName);
   }
 }
-
-renderCategories();
