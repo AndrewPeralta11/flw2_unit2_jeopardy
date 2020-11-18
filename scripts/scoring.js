@@ -15,10 +15,9 @@
  *      Need more help? Check out https://api.jquery.com/ or ask a volunteer.
  */
 
-$("#score").show();
-
 function renderScoringButtons() {
   // Add code here
+  $("#score").show();
   $("#correctButton").click(function () {
     addToScore();
   });
